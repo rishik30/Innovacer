@@ -1,0 +1,146 @@
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.app-nav {
+  margin: 0;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-nav > div {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.app-nav li {
+  font-size: 16px;
+  line-height: 60px;
+  font-weight: 400;
+  cursor: pointer;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.app-nav li:hover {
+  background: rgba(200,200,200,0.5);
+}
+
+.app-nav li a {
+  color: var(--mirch-darker);
+  font-weight: 600;
+}
+
+.main-container {
+  margin: 20px;
+}
+
+.file-uploader-container {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.file-input-container {
+  width: 80%;
+  height: 120px;
+  margin: 20px auto;
+  border: 1px dashed var(--neel-light);
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: var(--neel-lightest);
+}
+
+.file-input-container input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-input-container .input-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  color: var(--primary-dark);
+}
+
+.file-upload-modal .Text.msg-text {
+  line-height: 30px;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.file-upload-modal .Text.msg-text.success {
+  color: var(--success);
+}
+
+.file-upload-modal .Text.msg-text.error {
+  color: var(--alert);
+}
+
+.patient-details-container .background {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(98deg,#5ac3ff,#8099da);
+}
+
+.patient-details-container .patient-cont {
+  position: relative;
+}
+
+.patient-details-container .patient-cont .loader {
+  display: flex;
+  justify-content: center;
+}
+
+.patient-details-container .patient-cont .Card {
+  position: absolute;
+  bottom: -80%;
+  z-index: 1;
+  left: 50%;
+  background: white;
+  padding: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.patient-details-container .patient-cont .Card .patient-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.patient-details-container .patient-cont .Card .patient-details span.Text {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.patient-details-container .patient-cont .Card .patient-details .name {
+  font-size: 18px;
+}
+
+.Table h4.Heading {
+  padding-left: var(--spacing-l);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
